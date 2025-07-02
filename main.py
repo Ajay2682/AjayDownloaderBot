@@ -38,7 +38,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("⚠️ Please send a valid URL starting with http or https.", reply_markup=get_buttons())
         return
 
-    await update.message.reply_text("🔄 *Processing your link...*
+    await update.message.reply_text("🔄 *Processing your link...*"
 Please wait ⏳", parse_mode="Markdown")
 
     try:
