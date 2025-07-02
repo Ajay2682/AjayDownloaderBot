@@ -22,18 +22,14 @@ def get_buttons():
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "👋 *Welcome to Ajay Downloader Bot!*
-
-"
-        "📥 Send me any link from:
-"
-        "📸 Instagram, 📘 Facebook, 🐦 Twitter (X), 📌 Pinterest, 🧵 Threads
-
-"
-        "🔗 Just paste the URL and I'll do the rest! 🚀",
-        parse_mode="Markdown",
-        reply_markup=get_buttons()
-    )
+        await update.message.reply_text(
+    "👋 *Welcome to Ajay Downloader Bot!*\n\n"
+    "📥 Send me any link from:\n"
+    "📸 Instagram, 📘 Facebook, 🐦 Twitter (X), 📌 Pinterest, 🧵 Threads\n\n"
+    "🔗 Just paste the URL and I'll do the rest! 🚀",
+    parse_mode="Markdown",
+    reply_markup=get_buttons()
+        )
 
 async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text.strip()
