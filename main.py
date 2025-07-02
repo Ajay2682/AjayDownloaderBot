@@ -22,7 +22,7 @@ def get_buttons():
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "👋 *Welcome to Ajay Downloader Bot!*
+        "👋 *Welcome to Ajay Downloader Bot!*"
 
 "
         "📥 Send me any link from:
